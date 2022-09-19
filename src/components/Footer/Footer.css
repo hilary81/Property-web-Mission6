@@ -1,0 +1,144 @@
+.footer{
+    width:100vw;
+    height:400px;
+    padding:3rem;    
+    background-color:rgb(78, 76, 76);
+   
+}
+.footer-container{
+    display:flex;
+    justify-content: center;
+    gap:1rem;
+}
+.logo-section{
+    display:flex;
+    align-items: center;
+    margin-left:0;
+    margin-right:2.5rem;
+    
+}
+.add-section{
+    display:flex;
+    align-items: center;    
+    flex-direction: column;
+    gap:1rem;
+    width:340px;
+    padding:1rem;
+    margin:1rem; 
+    margin-right:2.5rem;
+}
+.add-title{
+   font-size: x-large;
+   align-self: flex-start;
+   color:white;
+}
+.add-details{
+    font-size: large;
+    line-height:1.5rem;
+    color:white;
+}
+.newsletter-container{
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    height:12rem; 
+    margin-left:3rem;
+    background-color:white;
+    padding: 3rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+   
+}
+.sub-title{
+    font-size:x-large; 
+}
+.input-box{
+    width:90%;
+    box-sizing:border-box;
+    padding:1rem;
+    border:none;
+    border-bottom: 2px solid  var(--primary-color);
+    margin-bottom:1rem;
+}
+.sub-button{
+    width:8rem;
+    padding:1rem 1.5rem;
+    border-radius:0.5rem;
+    background-color: var(--primary-color);
+    border:none;
+    color:white;
+}
+.bottom-footer{
+    display:flex;
+    flex-direction: row;
+    margin-left:1.5rem;
+    margin-top:4rem;
+}
+.contact-list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+.contact-sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap:1.5rem;
+  color:white;
+  list-style: none;
+  font-weight: 400;
+  font-size: large;
+  line-height: 1.5rem;
+
+}
+.social-media{
+    display:flex;
+    margin-left:auto;
+    margin-right:2rem;    
+    justify-content: flex-end;
+      
+}
+.link-icon{
+    text-decoration: none;
+    transition:0.3s;
+}
+.social_icon{
+    background-color: white;
+    border-radius:50%;
+    padding:0.7rem;
+    margin:1rem;
+   
+}
+.link-icon:hover{
+    color:var(--primary-color);
+    transform: translateY(-20%);
+}
+@media only screen and (max-width: 900px){
+
+    .footer{
+        height: auto;
+        display: flex;       
+
+    }
+    .footer-container{
+       
+        display:flex;
+        flex-direction: column;
+        align-self: start;
+      
+    }
+    .contact-list{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .newsletter-container{
+        width: 90%;
+        height:13rem;
+        margin-left: -2rem;
+    }
+}
+
