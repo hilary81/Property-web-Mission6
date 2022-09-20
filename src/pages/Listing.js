@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Selections from '../components/Body/selections/Selections';
 
 function Listing() {
   return (
     <div>
-      Listing
+     <Selections />
     </div>
   )
 }
