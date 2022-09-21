@@ -1,0 +1,32 @@
+.SectionOneHome {
+    background-image: url(https://i.postimg.cc/W3thBgj5/Blueprint-Hero-01.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 655px;
+}
+
+.WelcomeCard {
+    color: white;
+    background-color: #252626;
+    float: right;
+    height: 338px;
+    width: 692px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 140px 90px 0px auto;
+    padding-left: 90px;
+    box-shadow: 1px 6px 15px 1px black;
+}
+
+.WelcomeHeading {
+    font-family: Roboto;
+    font-size: 35px;
+}
+
+.WelcomeText {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 24px;
+}

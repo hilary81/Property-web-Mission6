@@ -56,7 +56,7 @@ const Header = () => {
        <div className="logo" >
         <img 
            src={Logo}
-           height="65"
+           className="logoHeader"
            alt="Property-logo"
         />
        </div>
