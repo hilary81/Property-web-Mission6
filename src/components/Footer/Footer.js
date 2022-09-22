@@ -14,7 +14,7 @@ const Footer = () => {
             <Link to='/home' >
                 <img 
                 src={Logo}
-                height='80px'
+                height='59px'
                 alt="logo"
                 />
             </Link>
@@ -25,7 +25,7 @@ const Footer = () => {
             Address
           </h3>
           <p className='add-details'>
-            Level 17, PWC Building Commercial Bay Tower, 11-19 Customs Street West, Auckland CBD 1010, New Zealand
+            Level 17, PWC Building Commercial Bay Tower, 11-19 Customs Street West,<br/> Auckland CBD 1010, New Zealand
           </p>
         </Col>
         <Col lg="6" md="6" sm="12" className='newsletter-section'> 
@@ -46,28 +46,28 @@ const Footer = () => {
            <ul className='contact-sec'>
             <li>Phone: 09 391 4642 </li>
             <li>International: +64 21 642 119</li>
-            <li>Email:info@metronz.co.nz</li>
+            <li>Email: info@metronz.co.nz</li>
            </ul>             
            </Col>
            <Col className='social-media'>
              <div className=' '>
                  <Link to="#" className='link-icon'>                 
-                 <i className="ri-mail-unread-fill social_icon" ></i>                 
+                 <img src="https://i.postimg.cc/h4CnSNN4/Vector-9.png" alt="instaIcon" />                 
                 </Link>
              </div>
               <div className=' '>
                  <Link to="#" className='link-icon'>            
-                <i className="ri-twitter-fill social_icon"></i>                      
+                <img src="https://i.postimg.cc/0QW4s1jL/Vector-10.png" alt="twitterIcon" />                      
               </Link>
             </div>
             <div className=' '>
                  <Link to="#" className='link-icon'>            
-                <i className="ri-instagram-fill social_icon"></i>                      
+                <img src="https://i.postimg.cc/26K0tdXY/Vector-11.png" alt="linkedinIcon" />                      
               </Link>
             </div>
             <div className=' '>
                  <Link to="#" className='link-icon'>            
-                <i className="ri-facebook-fill social_icon"></i>                      
+                <img src="https://i.postimg.cc/Y9n69p1z/Vector-12.png" alt="facebookIcon" />                      
               </Link>
             </div>
            </Col>
