@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const AboutUS = () => {
   return (
     <div>
-      About US
+  
     </div>
   )
 }
