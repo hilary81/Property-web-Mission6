@@ -4,7 +4,6 @@ import FlexDiv from '../components/common/SimpleComponents';
 import { Link } from 'react-router-dom';
 
 
-
 const ListingButtons = styled(FlexDiv)`
   display: flex;
   justify-content: space-between;

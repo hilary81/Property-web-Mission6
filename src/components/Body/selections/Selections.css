@@ -4,7 +4,7 @@
 }
 .search-container{
     display:flex;
-    width:100%;
+    width:100vw;
     height:auto; 
     padding:1rem 2rem 2rem 6rem;  
     margin-right:1rem;    
@@ -15,7 +15,8 @@
 }
 
 .search-section{
-    width:100vw;
+    width:100%;
+    margin-left:2rem;
   
 }
 .selection-groups{    
