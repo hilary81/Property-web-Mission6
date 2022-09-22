@@ -75,12 +75,54 @@ const Address = styled(FlexDiv)`
   margin: 15px 0px;
   cursor: pointer;
 `
+const MainSection = styled(FlexDiv)`
+  display: flex;
+  gap: 20px;
+  margin: 25px 100px;
+`
+  
+const PropertyOverview = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  width: 80%;
+`
+  
+const AgentViewing = styled(FlexDiv)`
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+`
+  
+const PropertyAgent = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  
+`
+  
+const ViewingRequest = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  
+`
+const Separator = ({ color }) => (
+  <hr 
+    style={{
+      color: color, 
+      backgroundColor: color,
+      border: 'none',
+      height: '1px', 
+      margin: '25px 110px', 
+    }} 
+  />
+)
 
 const Property = () => {
   return (
     <div>
-      {/* Buttons, Back to Listings, previous and next listing */}
-      {/* Link to Lisintgs menu, call to backend for next and previous */}
+      
+      {/* Listing Buttons */}
       <ListingButtons>
         <ListingBack>
           <Link to='/curentlisting'>
@@ -117,7 +159,7 @@ const Property = () => {
         </div>
       </PhotoSlider>
 
-      {/* FINISHED: Price & Apply box */}
+      {/* Price & Apply box */}
       <ApplyBox>
         <Information>
           <Title>Unbeatable location</Title>
@@ -158,6 +200,34 @@ const Property = () => {
       Features
       Nearby
       Map */}
+
+      <MainSection>
+        <PropertyOverview>
+          <div>
+            
+            <img src='/images/House 01 Property Overview.png' alt='Overview' style={{width: 750, margin: '30px 25px 10px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            <img src='/images/House 01 Data.png' alt='Data' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            <img src='/images/House 01 Features.png' alt='Features' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            <img src='/images/House 01 Nearby.png' alt='Nearby' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            <img src='/images/House 01 Map.png' alt='Map' style={{width: 750, margin: '10px 25px'}}></img>
+          </div>
+        </PropertyOverview>
+
+        <AgentViewing>
+          <PropertyAgent>
+            <img src='/images/Property Agent 01.png' alt='Agent' style={{width: 350, margin: '35px 10px'}}></img>
+          </PropertyAgent>
+          <ViewingRequest>
+            <img src='/images/Schedule Visit.png' alt='Schedule' style={{width: 350, margin: '35px 10px'}}></img>
+          </ViewingRequest>
+        </AgentViewing>
+
+      </MainSection>
+
       {/* Work on separators */}
       {/* Similar Listings */}
       {/* SearchBar */}
