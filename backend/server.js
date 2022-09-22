@@ -54,10 +54,10 @@ const quickSort=(list) =>{
         //.catch((err)=> console.log(err))
     
    // ])
-  
 
 
 
+   
 app.listen(3001,function() {
     console.log('Server is runing on post 3001');
 })

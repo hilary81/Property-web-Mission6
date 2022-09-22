@@ -4,7 +4,7 @@ import FlexDiv from '../components/common/SimpleComponents';
 import { Link } from 'react-router-dom';
 
 
-
+// Component Styling
 const ListingButtons = styled(FlexDiv)`
   display: flex;
   justify-content: space-between;
@@ -118,11 +118,12 @@ const Separator = ({ color }) => (
   />
 )
 
+// Page
 const Property = () => {
   return (
     <div>
       
-      {/* Listing Buttons */}
+      {/* LISTING BUTTONS */}
       <ListingButtons>
         <ListingBack>
           <Link to='/curentlisting'>
@@ -136,7 +137,7 @@ const Property = () => {
       </ListingButtons>
 
 
-      {/* Photo sample */}
+      {/* PHOTO SAMPLE GRID */}
       <PhotoSlider>
         <div className='Picture 1' style={{
           gridColumnStart: 1, 
@@ -159,7 +160,7 @@ const Property = () => {
         </div>
       </PhotoSlider>
 
-      {/* Price & Apply box */}
+      {/* TITLE, PRICE AND APPLY BOX */}
       <ApplyBox>
         <Information>
           <Title>Unbeatable location</Title>
@@ -191,32 +192,30 @@ const Property = () => {
             }}>APPLY</button>
           <img src='/images/ShareStar Logo.png' alt='Share & Star' style={{width: 80, height: 32, cursor: 'pointer'}}></img>
         </PriceApply>
-
       </ApplyBox>
-      {/* Bring from backend as well, design in react and copy code to db */}
 
-      {/* Property Overview
-      Data
-      Features
-      Nearby
-      Map */}
-
+      {/* PROPERTY OVERVIEW */}
       <MainSection>
         <PropertyOverview>
           <div>
-            
+            {/* OVERVIEW TEXT */}
             <img src='/images/House 01 Property Overview.png' alt='Overview' style={{width: 750, margin: '30px 25px 10px'}}></img>
             <Separator color='#EE585A'></Separator>
+            {/* DATA */}
             <img src='/images/House 01 Data.png' alt='Data' style={{width: 750, margin: '10px 25px'}}></img>
             <Separator color='#EE585A'></Separator>
+            {/* HOUSE FEATURES */}
             <img src='/images/House 01 Features.png' alt='Features' style={{width: 750, margin: '10px 25px'}}></img>
             <Separator color='#EE585A'></Separator>
+            {/* NEARBY */}
             <img src='/images/House 01 Nearby.png' alt='Nearby' style={{width: 750, margin: '10px 25px'}}></img>
             <Separator color='#EE585A'></Separator>
+            {/* GOOGLE MAP */}
             <img src='/images/House 01 Map.png' alt='Map' style={{width: 750, margin: '10px 25px'}}></img>
           </div>
         </PropertyOverview>
 
+        {/* AGENT INFO, SCHEDULE A VISIT */}
         <AgentViewing>
           <PropertyAgent>
             <img src='/images/Property Agent 01.png' alt='Agent' style={{width: 350, margin: '35px 10px'}}></img>
@@ -227,14 +226,6 @@ const Property = () => {
         </AgentViewing>
 
       </MainSection>
-
-      {/* Work on separators */}
-      {/* Similar Listings */}
-      {/* SearchBar */}
-      
-      {/* Property Agent
-      Request a viewing */}
-      {/* Footer */}
     </div>
   )
 }
