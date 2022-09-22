@@ -222,7 +222,7 @@ const Property = () => {
             <img src='/images/Property Agent 01.png' alt='Agent' style={{width: 350, margin: '35px 10px'}}></img>
           </PropertyAgent>
           <ViewingRequest>
-            <img src='/images/Schedule Visit.png' alt='Schedule' style={{width: 350, margin: '35px 10px'}}></img>
+            <img src='/images/Schedule Visit.png' alt='Schedule' style={{width: 250, margin: '35px 60px'}}></img>
           </ViewingRequest>
         </AgentViewing>
 
