@@ -18,7 +18,7 @@ const navLinks = [
     },
     {
       path: "/curentlisting",
-      display: "Current listings",
+      display: "Rental Properties",
     },
   
     {

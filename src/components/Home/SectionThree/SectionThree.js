@@ -2,6 +2,7 @@ import React from 'react';
 import "./SectionThree.css";
 import Stack from '@mui/material/Stack';
 import Checkbox from '@mui/material/Checkbox';
+import FeatureListingCards from './featureListingCards';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -30,7 +31,7 @@ const SectionThree = () => {
     </div>
     <Stack direction="row" spacing={10} className="FeatureListingCardAll">
         {/* Card One */}
-            <Stack className='FeatureListingCardOne'>
+            {/* <Stack className='FeatureListingCardOne'>
         <img src="https://i.postimg.cc/XNxCWLyL/Frame-4.png" alt="featureOne" className='featureImageListing'/>
         <Stack direction="row" spacing={4} className='featureListingInfo'>
             <h5 className='featureListingPrice'>$540/week</h5>
@@ -54,9 +55,9 @@ const SectionThree = () => {
             <p1 className='featureListingAddress'>147-149 Victoria Street West, City Centre,<br/>Auckland</p1>
             <img src="https://i.postimg.cc/tRWbjpCy/Share.png" alt="Share" style={{height: "23px", marginTop: "-20px"}}/>
         </Stack>
-        </Stack>
+        </Stack> */}
         {/* Card Two */}
-            <Stack className='FeatureListingCards'>
+            {/* <Stack className='FeatureListingCards'>
         <img src="https://i.postimg.cc/9QQ3k44V/Frame-3-2.png" alt="featureTwo" className='featureImageListing'/>
         <Stack direction="row" spacing={4} className='featureListingInfo'>
             <h5 className='featureListingPrice'>$450/week</h5>
@@ -80,9 +81,9 @@ const SectionThree = () => {
             <p1 className='featureListingAddress'>34 Kingston Street, City Centre, Auckland</p1>
             <img src="https://i.postimg.cc/tRWbjpCy/Share.png" alt="Share" style={{height: "23px", marginTop: "-20px"}}/>
         </Stack>
-        </Stack>
+        </Stack> */}
         {/* Card Three */}
-            <Stack className='FeatureListingCards'>
+            {/* <Stack className='FeatureListingCards'>
         <img src="https://i.postimg.cc/nrSPqr0G/Frame-3-1.png" alt="featureThree" className='featureImageListing'/>
         <Stack direction="row" spacing={4} className='featureListingInfo'>
             <h5 className='featureListingPrice'>$500/week</h5>
@@ -106,10 +107,11 @@ const SectionThree = () => {
             <p1 className='featureListingAddress'>70 Sale Street, City Centre,  Auckland</p1>
             <img src="https://i.postimg.cc/tRWbjpCy/Share.png" alt="Share" style={{height: "23px", marginTop: "-20px", paddingLeft: "30px"}}/>
         </Stack>
-        </Stack>
+        </Stack> */}
+        <FeatureListingCards />
     </Stack>
     <div className='AllListingsButton'>
-    <button className='btnAllListings'>VIEW ALL LISTINGS</button>
+    <button className='btnAllListings'><a className="btnLink" href="/curentlisting">VIEW ALL LISTINGS</a></button>
     </div>
     </div>
   )

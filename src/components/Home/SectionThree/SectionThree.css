@@ -66,6 +66,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     height: 70px;
+    inline-size: 280px;
 }
 
 .featureListingInfoAddress {
@@ -91,13 +92,17 @@
     height: 61px;
     border-radius: 10px;
     border: none;
-    color: #F0F7FF;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
 }
 
 .btnAllListings:hover {
     background-color: #EE585A;
     cursor: pointer;
     box-shadow: 0px 3px 7px 1px grey;
+}
+
+.btnLink {
+    color: #F0F7FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
 }

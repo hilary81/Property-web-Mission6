@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const AboutUS = () => {
   return (
     <div>
-      About US
+      About us
     </div>
   )
 }
