@@ -33,31 +33,32 @@ const quickSort=(list) =>{
   }
   
   async function main(quickSort){
+    
     await client.connect();
     console.log("Connected successfully to MONGO");
     const db = client.db(dbName);
     const collection = db.collection('propertyListCollection');
     const findResult = await collection.find().toArray();  
-    console.log("FOund documnet ==>",quickSort(findResult));  
-    
+    console.log("FOund documnet ==>",quickSort(findResult)); 
+    sorted_result= quickSort(findResult)     
   
-    app.get('/', (req, res) => {    
-        const result = quickSort(findResult )  
-      res.send(result);
+    app.get('/', (req, res) => {   
+
+      const {q} = req.query;
+      console.log(q)
+      const keys =["listing_id", "price", "deal",'address','url']
+      const search = (data)=>{
+        return data.filter((item)=>
+        keys.some((key)=> item[key].toLowerCase().includes(q))
+       );
+      };
+
+      res.json(search(sorted_result).splice(0,6));
     });   
      return "done";
   }
 
-    //app.get('/',(req,res)=>[
-      ///  collection.find({})
-        //.then((items)=>res.json(items))
-        //.catch((err)=> console.log(err))
-    
-   // ])
-  
-
-
-
+ 
 app.listen(3001,function() {
     console.log('Server is runing on post 3001');
 })

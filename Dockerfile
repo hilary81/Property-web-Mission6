@@ -2,11 +2,11 @@ FROM node:alpine
 
 WORKDIR /usr/scr/app
 
-COPY package.json package-lock.json 
+COPY package*.json .
 
 
 
-RUN npm install --legacy-peer-deps
+RUN npm ci 
 
 
 COPY . .
