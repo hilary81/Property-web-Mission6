@@ -1,15 +1,13 @@
 import React from 'react';
-import {Container} from '@material-ui/core';
+import {Container,Row} from 'react-bootstrap';
 import './Selections.css';
-
-
-
 
 
 const Selections = () => {
   return (
-    
-        <Container className='search-container'>
+       <Container className="input-containers">
+        <Row className='search-container'>
+          <div className='search-section'>
            <div className='selection-groups'>
             <div className='search-groups'>
               <div className="search__box">
@@ -61,9 +59,11 @@ const Selections = () => {
         </select>
         </div>
         </div>
-    </Container>   
+        </div>
+    </Row> 
+    </Container> 
     
   )
 }
 
-export default Selections
+export default Selections;
