@@ -1,0 +1,93 @@
+.banner-container{
+    width:100vw;
+    height:auto;
+    margin-left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.columns-group{
+    width: 86%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    margin-left:7rem;
+    margin-right:5rem;
+    border-radius: 1rem;
+}
+.col-1{
+    flex:50%;   
+    padding:2rem 1rem 2rem 2rem;
+}
+.col-2, .col-3{
+    flex:25%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.banner-img{
+    width:100%;
+}
+
+.featureImageListing-2{
+    width:90%;
+    height:99%;
+    object-fit:cover;
+    padding: 0 1rem 0 1rem;
+}
+
+.featureListingPrice-2 {
+    padding-right: 40px;
+    font-size: 20px;
+    font-family: Roboto;
+    color:white;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+.ListingFacAmount-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white; 
+    font-size: x-large;   
+}
+.fac-icon{
+    width:25px;
+    height:30px;
+    margin-right:-8px;
+}
+
+.star-icon,.share-icon{
+    width:25px;
+    height:30px;
+}
+.star-icon{
+    margin-left:0.5rem;
+    margin-top:-10px;
+}
+.share-icon{
+    margin-top: -2px;;
+}
+.star-share-icon{
+    margin-top:3rem;
+    margin-left:1rem;
+}
+.ListingCaption-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;    
+    color:white;
+}
+
+.featureListingAddress-2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px; 
+}
+
+.featureListingInfoAddress-2 {
+    display: flex;
+    width: 70%;
+    padding-top:1rem;
+    background-color: var(--secondary-color);
+    color: #F0F7FF;
+}
+

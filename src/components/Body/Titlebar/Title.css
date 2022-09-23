@@ -1,0 +1,73 @@
+.tittlebar-container{
+    width:100vw;
+    height:auto;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--third-color);
+}
+
+.titlebar{ 
+    width: 85%;
+    margin:1rem 5rem 2rem 8rem;  
+}
+.titlebar-section{
+    display: flex;
+    flex-direction: row;  
+    margin-left:1rem;
+}
+
+.titlebar h2{ 
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom:2rem;
+}
+.information{
+    margin-left:3rem;
+}
+
+.ri-information-fill{
+    font-size: 2rem;
+    margin-top:-0.3rem; 
+    margin-right:0.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--secondary-color); 
+}
+
+.information-1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+.form-select{
+   padding:0.2rem 12rem 0.2rem 1rem;
+   font-size: 1rem;
+   border-radius: 0.5rem;
+   border-color: var(--primary-color);
+   text-align: left;
+   margin-left:25rem;
+   margin-right:1em; 
+}
+
+.selected-title{
+   margin-right:4rem;
+   font-size: 1rem;
+   
+}
+.ri-road-map-fill{
+    font-size: x-large;
+    margin-left:1.5rem;
+    cursor: pointer;
+}
+.ri-road-map-fill:hover{
+    color:var(--primary-color);
+}
+
+.mapview-title{
+    font-size: larger;
+    font-weight: 500;
+}

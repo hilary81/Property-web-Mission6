@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from '../pages/Home';
 import Listing from '../pages/Listing';
-import Property from '../pages/property';
+import Property from '../pages/Property';
 import News from '../pages/News';
 import AboutUS from '../pages/AboutUS';
 import Contact from '../pages/Contact';
@@ -18,7 +18,7 @@ const Routers = () => {
         <Route path="/news" element={<News />} />
         <Route path="/aboutus" element={<AboutUS />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signin" element={<SignIn />} />       
+        <Route path="/signin" element={<SignIn />} />      
 
        
       </Routes>
