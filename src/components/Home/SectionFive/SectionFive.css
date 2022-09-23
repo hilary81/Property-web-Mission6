@@ -1,0 +1,22 @@
+.SectionFiveHome {
+    background-color: #F3EAEA;
+    height: 365px;
+}
+
+.Awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecFiveHeading {
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.AwardCards {
+    display: flex;
+    justify-content: center;
+}

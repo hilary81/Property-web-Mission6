@@ -1,6 +1,11 @@
 .SectionThreeHome {
     background-color: #F3EAEA;
-    height: 829px;
+    height: 870px;
+}
+
+.FeatureListingCardAll {
+    display:flex;
+    justify-content: center;
 }
 
 .FeatureListings {
@@ -10,35 +15,35 @@
 }
 
 .SecThreeHeading {
-    margin-top: 65px;
+    margin-top: 70px;
     font-family: Roboto;
     font-size: 30px;
+    padding-bottom: 60px;
 }
-
-.FavouriteStar {
-    margin-top: -410px;
-    margin-left: 300px;
+.starStack {
+    display: flex;
+    justify-content: center;
     position: absolute;
+    margin-left: 410px;
 }
-
+.FeatureListingCardOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .FeatureListingCards {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
 }
 
 .featureListingInfo {
-    width: 360px;
+    width: 362px;
     padding-top: 15px;
     background-color: black;
     margin-top: -1px;
     padding-left: 20px;
     color: #F0F7FF;
-}
-
-.featureImageListing {
-    width: 25%;
 }
 
 .featureListingPrice {
@@ -60,16 +65,39 @@
 .featureListingAddress {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    padding-bottom: 30px;
+    height: 70px;
 }
 
 .featureListingInfoAddress {
     display: flex;
-    width: 360px;
+    width: 362px;
     padding-top: 15px;
     background-color: black;
     padding-left: 20px;
     color: #F0F7FF;
     border-radius: 0px 0px 7px 7px;
     align-items: center;
+}
+
+.AllListingsButton {
+    display: flex;
+    justify-content: center;
+    padding: 63px;
+}
+
+.btnAllListings {
+    background-color: #A83F41;
+    width: 194px;
+    height: 61px;
+    border-radius: 10px;
+    border: none;
+    color: #F0F7FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.btnAllListings:hover {
+    background-color: #EE585A;
+    cursor: pointer;
+    box-shadow: 0px 3px 7px 1px grey;
 }

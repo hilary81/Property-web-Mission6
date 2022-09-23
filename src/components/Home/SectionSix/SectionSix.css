@@ -1,0 +1,110 @@
+.SectionSixHome {
+    background-color: black;
+    height: 570px;
+}
+
+.quoteContainer {
+    background-color: #3b3743;
+    height: 360px;
+    width: 1100px;
+    position: absolute;
+    left: -20px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+}
+
+.Quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecSixHeading {
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 70px;
+    color: #ffffff;
+}
+
+.AutoPlayQuotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fling-minislide {
+    overflow:hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fling-minislide div { 
+    position:absolute; 
+    animation:fling-minislide 32s infinite;
+     opacity:0; 
+}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide div:nth-child(3){animation-delay:0s;}
+.fling-minislide div:nth-child(2){animation-delay:10s;}
+.fling-minislide div:nth-child(1){animation-delay:22s;}
+
+.QuoteTextSecSix {
+    padding-top: 350px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 49.66px;
+    inline-size: 957.37px;
+    overflow-wrap: break-word;
+}
+
+.QuoteAuthorSecSix {
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45.84px;
+    padding-top: 20px;
+}
+
+.startQuoteMarksQ1 {
+    position: absolute;
+    margin-left: -515px;
+    margin-top: -150px;
+}
+
+.endQuoteMarksQ1 {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -25px;
+}
+
+.startQuoteMarksQ2 {
+    position: absolute;
+    margin-left: -515px;
+    margin-top: -200px;
+}
+
+.endQuoteMarksQ2 {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -25px;
+}
+
+.startQuoteMarksQ3 {
+    position: absolute;
+    margin-left: -515px;
+    margin-top: -150px;
+}
+
+.endQuoteMarksQ3 {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -25px;
+}
