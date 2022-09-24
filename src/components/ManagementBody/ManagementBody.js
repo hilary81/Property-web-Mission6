@@ -1,0 +1,242 @@
+import React from 'react';
+import styled from 'styled-components';
+import FlexDiv from '../components/common/SimpleComponents';
+import { Link } from 'react-router-dom';
+
+// Component Styling
+const ListingButtons = styled(FlexDiv)`
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 100px;
+`
+const ListingBack = styled(FlexDiv)`
+
+`
+const ListingPreviousNext = styled(FlexDiv)`
+  gap: 120px;
+`
+
+const PhotoSlider = styled(FlexDiv)`
+  display: grid;
+  column-gap: 35px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0px 100px;
+`
+
+const ApplyBox = styled(FlexDiv)`
+  display: flex;
+  margin: 28px 100px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: #F3EAEA;
+  border: 1px solid #D0D1D4;
+  font-family: Roboto;
+  justify-content: space-between;
+`
+
+const Information = styled(FlexDiv)`
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px;
+`
+
+const Title = styled.div`
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000000;
+`
+
+const PriceApply = styled(FlexDiv)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 30px;
+`
+
+const PriceWeek = styled(FlexDiv)`
+  gap: 10px;
+  align-items: center
+`
+const Price = styled.div`
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 700;
+  color: #A83F41;
+`
+const Address = styled(FlexDiv)`
+  color: red;
+  font-size: 12px;
+  margin: 15px 0px;
+  cursor: pointer;
+`
+const MainSection = styled(FlexDiv)`
+  display: flex;
+  gap: 20px;
+  margin: 25px 100px;
+`
+  
+const PropertyOverview = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  width: 80%;
+`
+  
+const AgentViewing = styled(FlexDiv)`
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+`
+  
+const PropertyAgent = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  
+`
+  
+const ViewingRequest = styled(FlexDiv)`
+  border: 1px solid #D0D1D4;
+  border-radius: 8px;
+  
+`
+const Separator = ({ color }) => (
+  <hr 
+    style={{
+      color: color, 
+      backgroundColor: color,
+      border: 'none',
+      height: '1px', 
+      margin: '25px 110px', 
+    }} 
+  />
+)
+
+// Page
+const ManagementBody = (
+    listingBack, 
+    listingPrevious,
+    listingNext,
+    pic1, pic2, pic3, pic4, pic5,
+    propOverview,
+    propData,
+    propFeatures,
+    propNearby,
+    propMap,
+    agent, schedule) => {
+  return (
+    <div>
+      
+      {/* LISTING BUTTONS */}
+      <ListingButtons>
+        <ListingBack>
+          <Link to='/curentlisting'>
+            <img src={listingBack} alt='Back' style={{width: 200, height: 25, cursor: 'pointer'}}></img>
+          </Link>
+        </ListingBack>
+        <ListingPreviousNext>
+          <img src={listingPrevious} alt='Previous' style={{width: 200, height: 25, cursor: 'pointer'}}></img>
+          <img src={listingNext} alt='Next' style={{width: 170, height: 25, cursor: 'pointer', marginRight: 30}}></img>
+        </ListingPreviousNext>
+      </ListingButtons>
+
+
+      {/* PHOTO SAMPLE GRID */}
+      <PhotoSlider>
+        <div className='Picture 1' style={{
+          gridColumnStart: 1, 
+          gridColumnEnd: 5,
+          gridRowStart: 1,
+          gridRowEnd: 5}}>
+            <img src={pic1} alt='House 01' style={{width: 1300, borderRadius: 8, cursor: 'pointer'}}></img>
+        </div>
+        <div className='Picture 2'>
+            <img src={pic2} alt='House 01' style={{width: 310, borderRadius: 8, cursor: 'pointer'}}></img>
+        </div>
+        <div className='Picture 3'>
+            <img src={pic3} alt='House 01' style={{width: 310, borderRadius: 8, cursor: 'pointer'}}></img>
+        </div>
+        <div className='Picture 4'>
+            <img src={pic4} alt='House 01' style={{width: 310, borderRadius: 8, cursor: 'pointer'}}></img>
+        </div>
+        <div className='Picture 5'>
+            <img src={pic5} alt='House 01' style={{width: 310, borderRadius: 8, cursor: 'pointer'}}></img>
+        </div>
+      </PhotoSlider>
+
+      {/* TITLE, PRICE AND APPLY BOX */}
+      <ApplyBox>
+        <Information>
+          <Title>Unbeatable location</Title>
+          <Address>
+            <img src='https://i.postimg.cc/CMCmwnFY/map-pin.png' alt='pin' style={{height: 12, marginRight: 4}}></img>
+            <div>
+              14 Upper Queen Street, City Center, Auckland
+            </div>
+          </Address>
+          <img src='https://i.postimg.cc/rpvQwS0y/House-Features-01b.png' alt='Features' style={{width: 210, marginTop: 15}}></img>
+        </Information>
+
+        <PriceApply>
+          <PriceWeek>
+            <Price>$600</Price>
+            <p1 style={{color: "#919DAC"}}>/ week</p1>
+          </PriceWeek>
+          <button style={{
+            backgroundColor: '#A83F41', 
+            color: 'white', 
+            border: 'none', 
+            width: 160, 
+            height: 60, 
+            borderRadius: 8,
+            fontSize: 14,
+            fontWeight: 700,
+            fontFamily: 'Inter',
+            cursor: 'pointer'
+            }}>APPLY</button>
+          <img src='https://i.postimg.cc/7ZhV1BSY/Share-Star-Logo.png' alt='Share & Star' style={{width: 80, height: 32, cursor: 'pointer'}}></img>
+        </PriceApply>
+      </ApplyBox>
+
+      {/* PROPERTY OVERVIEW */}
+      <MainSection>
+        <PropertyOverview>
+          <div>
+            {/* OVERVIEW TEXT */}
+            <img src={propOverview} alt='Overview' style={{width: 750, margin: '30px 25px 10px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            {/* DATA */}
+            <img src={propData} alt='Data' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            {/* HOUSE FEATURES */}
+            <img src={propFeatures} alt='Features' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            {/* NEARBY */}
+            <img src={propNearby} alt='Nearby' style={{width: 750, margin: '10px 25px'}}></img>
+            <Separator color='#EE585A'></Separator>
+            {/* GOOGLE MAP */}
+            <img src={propMap} alt='Map' style={{width: 750, margin: '10px 25px'}}></img>
+          </div>
+        </PropertyOverview>
+
+        {/* AGENT INFO, SCHEDULE A VISIT */}
+        <AgentViewing>
+          <PropertyAgent>
+            <img src={agent} alt='Agent' style={{width: 350, margin: '35px 10px'}}></img>
+          </PropertyAgent>
+          <ViewingRequest>
+            <img src={schedule} alt='Schedule' style={{width: 250, margin: '35px 60px'}}></img>
+          </ViewingRequest>
+        </AgentViewing>
+
+      </MainSection>
+    </div>
+  )
+}
+
+export default ManagementBody

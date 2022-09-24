@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true}))
 
 //DATABASE
 
-const url = 'mongodb://root:root@localhost:27017';
+const url = 'mongodb://host.docker.internal:27017';
 const dbName ="my_propertyDB"
 const client = new MongoClient(url)
 
@@ -41,11 +41,17 @@ const quickSort=(list) =>{
     console.log("FOund documnet ==>",quickSort(findResult));  
     
   
-    app.get('/', (req, res) => {    
-        const result = quickSort(findResult )  
+    // app.get('/', (req, res) => {    
+    //     const result = quickSort(findResult )  
+    //   res.send(result);
+    // });   
+    //  return "done";
+
+    app.get('/propertymanagement', (req, res) => {    
+      const result = findResult  
       res.send(result);
     });   
-     return "done";
+    return "done";
   }
 
     //app.get('/',(req,res)=>[
@@ -57,10 +63,10 @@ const quickSort=(list) =>{
 
 
 
-   
-app.listen(3001,function() {
-    console.log('Server is runing on post 3001');
+
+app.listen(3002,function() {
+    console.log('Server is runing on post 3002');
 })
-main(quickSort)
-.then(console.log)
-.catch(console.error)
+// main(quickSort)
+// .then(console.log)
+// .catch(console.error)
